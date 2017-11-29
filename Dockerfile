@@ -3,7 +3,7 @@ LABEL maintainer=youyo
 
 ENV LE_VERSION 0.1.1
 ENV AI_VERSION 0.1.2
-ENV CETRICS_VERSION 0.1.3
+ENV CETRICS_VERSION 0.1.4
 
 RUN	yum install -y http://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-1.el7.centos.noarch.rpm && \
 	yum install -y zabbix-agent zabbix-get zabbix-sender && \

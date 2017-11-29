@@ -5,7 +5,7 @@ ENV LE_VERSION 0.1.1
 ENV AI_VERSION 0.1.2
 ENV CETRICS_VERSION 0.1.3
 
-RUN	yum install -y http://repo.zabbix.com/zabbix/3.4/rhel/6/x86_64/zabbix-release-3.4-1.el6.noarch.rpm && \
+RUN	yum install -y http://repo.zabbix.com/zabbix/3.4/rhel/7/x86_64/zabbix-release-3.4-1.el7.centos.noarch.rpm && \
 	yum install -y zabbix-agent zabbix-get zabbix-sender && \
 	mkdir -p /var/lib/zabbix/bin && \
 	curl -sL https://github.com/youyo/zabbix-userparameter-script-aws-integration/releases/download/${AI_VERSION}/aws-integration -o /var/lib/zabbix/bin/aws-integration && \
